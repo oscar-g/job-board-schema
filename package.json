@@ -1,0 +1,32 @@
+{
+  "name": "@oscar-g/job-board-schema",
+  "version": "1.0.2",
+  "description": "Data validation schemas for Job Board forms",
+  "main": "dist/src/index.js",
+  "typings": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "tslint --fix 'src/**/*.ts'",
+    "prebuild": "rm -rf dist",
+    "build": "tsc --module commonjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oscar Gonzalez <contact@oscargonalez.info>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oscar-g/job-board-schema.git"
+  },
+  "devDependencies": {
+    "@types/joi": "^13.4.2",
+    "@types/node": "^10.7.1",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.1"
+  },
+  "dependencies": {
+    "joi": "^13.4.0"
+  }
+}
