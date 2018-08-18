@@ -1,6 +1,6 @@
 {
   "name": "@oscar-g/job-board-schema",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Data validation schemas for Job Board forms",
   "main": "dist/src/index.js",
   "typings": "dist/types/index.d.ts",
