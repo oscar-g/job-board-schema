@@ -14,11 +14,11 @@ export const companyFormSchema = Joi.object({
 export const jobFormSchema = Joi.object({
   title: Joi.string().required().max(150).label('Job Title'),
   location: Joi.string().required().max(200).label('Location'),
-  fulltime: Joi.boolean().required().tags('radio').meta({
+  fulltime: Joi.boolean().required().default(true).tags('radio').meta({
     labelTrue: 'Full time',
     labelFalse: 'Part time',
   }).label('Workload'),
-  contract: Joi.boolean().required().tags('radio').meta({
+  contract: Joi.boolean().required().default(false).tags('radio').meta({
     labelTrue: 'Contract/Freelance',
     labelFalse: 'Employment',
   }).label('Work Type'),
