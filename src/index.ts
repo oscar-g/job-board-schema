@@ -15,16 +15,12 @@ export const jobFormSchema = Joi.object({
   title: Joi.string().required().max(150).label('Job Title'),
   location: Joi.string().required().max(200).label('Location'),
   fulltime: Joi.boolean().required().tags('radio').meta({
-    label: {
-      0: 'Part time',
-      1: 'Full time',
-    },
+    labelTrue: 'Full time',
+    labelFalse: 'Part time',
   }).label('Workload'),
   contract: Joi.boolean().required().tags('radio').meta({
-    label: {
-      0: 'Employment',
-      1: 'Contract/Freelance',
-    },
+    labelTrue: 'Contract/Freelance',
+    labelFalse: 'Employment',
   }).label('Work Type'),
   reloc: Joi.boolean().optional().default(false).tags('cb').label('Relocation Assistance'),
   visa: Joi.boolean().optional().default(false).tags('cb').label('Visa Sponsorship'),
