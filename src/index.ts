@@ -34,7 +34,7 @@ export const userFormSchema = Joi.object({
   lastName: Joi.string().required().max(100).label('Last Name'),
 });
 
-export const scheduleSchema = Joi.object({
+export const scheduleFormSchema = Joi.object({
   immediate: Joi.boolean().required().default(true).label('Post Immediately'),
   start: Joi.date().min('now').when('immediate', {
     is: true,
@@ -57,3 +57,10 @@ export const paymentFormSchema = Joi.object({
   paymentId: Joi.string().required().label('hidden'),
   cartId: Joi.string().required().label('hidden'),
 });
+
+export default {
+  job: jobFormSchema,
+  company: companyFormSchema,
+  schedule: scheduleFormSchema,
+  payment: paymentFormSchema,
+};
