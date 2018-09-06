@@ -33,3 +33,18 @@ export const userFormSchema = Joi.object({
   firstName: Joi.string().required().max(100).label('First Name'),
   lastName: Joi.string().required().max(100).label('Last Name'),
 });
+
+export const scheduleSchema = Joi.object({
+  immediate: Joi.boolean().required().default(true).label('Post Immediately'),
+  start: Joi.date().min('now').when('immediate', {
+    is: true,
+    otherwise: Joi.empty(),
+  }).label('Post Date'),
+  length: Joi.number().min(1).default(1).label('Running time').meta({
+    optVal: {
+      0: {label: '1 Month', value: 1},
+      1: {label: '2 Months', value: 2},
+      2: {label: '3 Months', value: 2},
+    },
+  }),
+});
