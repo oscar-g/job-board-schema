@@ -48,3 +48,12 @@ export const scheduleSchema = Joi.object({
     },
   }),
 });
+
+export const paymentFormSchema = Joi.object({
+  email: Joi.string().required().email().label('Email').meta({
+    help: 'We\'ll send a receipt to this email address',
+  }),
+  customerId: Joi.string().required().label('hidden'),
+  paymentId: Joi.string().required().label('hidden'),
+  cartId: Joi.string().required().label('hidden'),
+});
