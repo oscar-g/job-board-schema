@@ -35,11 +35,7 @@ export const userFormSchema = Joi.object({
 });
 
 export const scheduleFormSchema = Joi.object({
-  immediate: Joi.boolean().required().default(true).label('Post Immediately'),
-  start: Joi.date().min('now').when('immediate', {
-    is: true,
-    otherwise: Joi.empty(),
-  }).label('Post Date'),
+  start:  Joi.date().required().min('now').default(Date.now).label('Post Date'),
   length: Joi.number().min(1).default(1).label('Running time').meta({
     optVal: {
       0: {label: '1 Month', value: 1},
@@ -47,7 +43,7 @@ export const scheduleFormSchema = Joi.object({
       2: {label: '3 Months', value: 2},
     },
   }),
-});
+}).label('Schedule Posting');
 
 export const paymentFormSchema = Joi.object({
   email: Joi.string().required().email().label('Email').meta({
@@ -56,7 +52,7 @@ export const paymentFormSchema = Joi.object({
   customerId: Joi.string().required().tags('hidden'),
   paymentId: Joi.string().required().tags('hidden'),
   cartId: Joi.string().required().tags('hidden'),
-});
+}).label('Payment');
 
 export default {
   job: jobFormSchema,
