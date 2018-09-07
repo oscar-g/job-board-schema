@@ -9,7 +9,6 @@
                 "package.json",
                 "package-lock.json",
                 "CHANGELOG.md",
-                "dist/**/*.{js,css}",
                 "docs"
             ],
             "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
