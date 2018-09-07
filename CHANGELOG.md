@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/oscar-g/job-board-schema/compare/v1.1.2...v1.1.3) (2018-09-07)
+
+
+### Bug Fixes
+
+* actually fix the previous bug ([c642afb](https://github.com/oscar-g/job-board-schema/commit/c642afb))
+
 ## [1.1.2](https://github.com/oscar-g/job-board-schema/compare/v1.1.1...v1.1.2) (2018-09-07)
 
 
