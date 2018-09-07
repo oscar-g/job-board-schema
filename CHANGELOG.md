@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/oscar-g/job-board-schema/compare/v1.1.1...v1.1.2) (2018-09-07)
+
+
+### Bug Fixes
+
+* **joi:** add description when schema default is function ([63f4282](https://github.com/oscar-g/job-board-schema/commit/63f4282))
+
 ## [1.1.1](https://github.com/oscar-g/job-board-schema/compare/v1.1.0...v1.1.1) (2018-09-06)
 
 
