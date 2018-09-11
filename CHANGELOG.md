@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/oscar-g/job-board-schema/compare/v1.1.3...v1.2.0) (2018-09-11)
+
+
+### Features
+
+* **payment:** add stripe card and token fields ([2363c54](https://github.com/oscar-g/job-board-schema/commit/2363c54))
+
 ## [1.1.3](https://github.com/oscar-g/job-board-schema/compare/v1.1.2...v1.1.3) (2018-09-07)
 
 
