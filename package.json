@@ -13,7 +13,7 @@
     "build": "tsc --module commonjs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prerelease": "npm run build",
-    "release": "semantic-release -d"
+    "release": "semantic-release"
   },
   "author": "Oscar Gonzalez <contact@oscargonalez.info>",
   "license": "MIT",
