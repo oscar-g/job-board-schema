@@ -38,12 +38,12 @@ export const scheduleFormSchema = Joi.object({
   start:  Joi.date().required().min('now').default(() => {
     return new Date().toISOString().split('T')[0];
   }, 'post live date').label('Post Date').description('The post will go live on this day'),
-  length: Joi.number().min(1).default(1).label('Running time').meta({
-    optVal: {
-      0: {label: '1 Month', value: 1},
-      1: {label: '2 Months', value: 2},
-      2: {label: '3 Months', value: 2},
-    },
+  length: Joi.number().min(1).default(1).label('Running Time').tags('dropdown').meta({
+    optVal: [
+      {label: '1 Month', value: 1},
+      {label: '2 Months', value: 2},
+      {label: '3 Months', value: 3},
+    ],
   }),
 }).label('Schedule Posting');
 
