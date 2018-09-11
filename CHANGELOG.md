@@ -1,3 +1,11 @@
+## [1.2.2](https://github.com/oscar-g/job-board-schema/compare/v1.2.1...v1.2.2) (2018-09-11)
+
+
+### Bug Fixes
+
+* **payment:** remove extra fields ([728f326](https://github.com/oscar-g/job-board-schema/commit/728f326))
+* **schedule:** fix dropdown field ([52d5c41](https://github.com/oscar-g/job-board-schema/commit/52d5c41))
+
 ## [1.2.1](https://github.com/oscar-g/job-board-schema/compare/v1.2.0...v1.2.1) (2018-09-11)
 
 
