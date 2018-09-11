@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/oscar-g/job-board-schema/compare/v1.2.0...v1.2.1) (2018-09-11)
+
+
+### Bug Fixes
+
+* **schedule:** fix date default value ([c5c13ce](https://github.com/oscar-g/job-board-schema/commit/c5c13ce))
+
 # [1.2.0](https://github.com/oscar-g/job-board-schema/compare/v1.1.3...v1.2.0) (2018-09-11)
 
 
