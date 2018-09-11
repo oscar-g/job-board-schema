@@ -35,8 +35,9 @@ export const userFormSchema = Joi.object({
 });
 
 export const scheduleFormSchema = Joi.object({
-  start:  Joi.date().required().min('now').default(Date.now, 'post live date').label('Post Date')
-    .description('The post will go live on this day'),
+  start:  Joi.date().required().min('now').default(() => {
+    return new Date().toISOString().split('T')[0];
+  }, 'post live date').label('Post Date').description('The post will go live on this day'),
   length: Joi.number().min(1).default(1).label('Running time').meta({
     optVal: {
       0: {label: '1 Month', value: 1},
