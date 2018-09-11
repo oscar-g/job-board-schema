@@ -53,8 +53,6 @@ export const paymentFormSchema = Joi.object({
   }),
   stripeCard: Joi.bool().required().default(false).not(false).tags('stripe-card').label('Card'),
   stripeToken: Joi.string().required().tags('hidden'),
-  customerId: Joi.string().required().tags('hidden'),
-  cartId: Joi.string().required().tags('hidden'),
 }).label('Payment');
 
 export default {
