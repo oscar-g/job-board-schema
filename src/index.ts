@@ -6,7 +6,7 @@ export const companyFormSchema = Joi.object({
   url: Joi.string().uri({
     scheme: ['http', 'https'],
   }).label('Website'),
-  description: Joi.string().required().max(1000).tags('wysiwyg').label('Description'),
+  description: Joi.string().required().tags('wysiwyg').label('Description'),
   // @todo validate + upload logo img
   // logoSrc: Joi.string().optional(),
 }).label('About the company');
@@ -24,8 +24,8 @@ export const jobFormSchema = Joi.object({
   }).label('Work Type'),
   reloc: Joi.boolean().optional().default(false).tags('cb').label('Relocation Assistance'),
   visa: Joi.boolean().optional().default(false).tags('cb').label('Visa Sponsorship'),
-  description: Joi.string().required().max(1000).tags('wysiwyg').label('Job Description'),
-  instructions: Joi.string().required().max(500).tags('textarea').label('Application Instructions'),
+  description: Joi.string().required().tags('wysiwyg').label('Job Description'),
+  instructions: Joi.string().required().max(1000).tags('textarea').label('Application Instructions'),
 }).label('About the job');
 
 export const userFormSchema = Joi.object({
