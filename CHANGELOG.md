@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/oscar-g/job-board-schema/compare/v1.2.2...v1.2.3) (2018-09-17)
+
+
+### Bug Fixes
+
+* **wysiwyg:** Remove max character limit from wysiwyg fields ([f72b9bb](https://github.com/oscar-g/job-board-schema/commit/f72b9bb))
+
 ## [1.2.2](https://github.com/oscar-g/job-board-schema/compare/v1.2.1...v1.2.2) (2018-09-11)
 
 
