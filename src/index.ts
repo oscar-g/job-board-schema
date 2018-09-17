@@ -48,9 +48,7 @@ export const scheduleFormSchema = Joi.object({
 }).label('Schedule Posting');
 
 export const paymentFormSchema = Joi.object({
-  email: Joi.string().required().email().label('Receipt Email').meta({
-    help: 'We\'ll send a receipt to this email address',
-  }),
+  email: Joi.string().required().email().label('Email').description('We\'ll send a receipt to this email address'),
   stripeCard: Joi.bool().required().default(false).not(false).tags('stripe-card').label('Card'),
   stripeToken: Joi.string().required().tags('hidden'),
 }).label('Payment');
